@@ -13,7 +13,7 @@ import java.util.Properties;
 public class ProductDao {
     private DataSource dataSource;
 
-    public ProductDao(DataSource dataSource) {
+    public ProductDao(DataSource dataSource) throws SQLException {
         this.dataSource = dataSource;
     }
 
