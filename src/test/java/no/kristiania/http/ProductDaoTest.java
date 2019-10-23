@@ -1,8 +1,13 @@
 package no.kristiania.http;
 
+import no.kristiania.jdbc.ProductDao;
+import org.flywaydb.core.Flyway;
 import org.h2.jdbcx.JdbcDataSource;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.util.Random;
+
 
 public class ProductDaoTest {
 
