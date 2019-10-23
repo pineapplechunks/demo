@@ -27,7 +27,16 @@
             <version>1.4.199</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>6.0.7</version>
+        </dependency>
     </dependencies>
+    <configuration>
+        <url>jdbc:h2:file:./target/foobar</url>
+        <user>sa</user>
+    </configuration>
     <build>
         <plugins>
             <plugin>
@@ -36,6 +45,8 @@
                 <version>3.8.1</version>
                 <configuration>
                     <release>11</release>
+                    <source>7</source>
+                    <target>7</target>
                 </configuration>
             </plugin>
             <plugin>
